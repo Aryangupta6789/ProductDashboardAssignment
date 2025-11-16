@@ -66,5 +66,5 @@ Mobile-first UI with fluid layout.
 
 ---
 
-## 📁 Folder Structure
+
 
