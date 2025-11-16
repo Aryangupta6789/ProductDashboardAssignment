@@ -15,14 +15,8 @@ This project is part of an internship assignment and showcases real-world featur
 
 ---
 
-## 🚀 Live Demo (If deployed)
-Add your deployed link here.
-
----
-
-## 📸 Screenshots
-
-(Add screenshots of UI, modal, dark mode, filters, etc.)
+## 🚀 Live Demo
+https://productdashboardassignment.netlify.app/
 
 ---
 
