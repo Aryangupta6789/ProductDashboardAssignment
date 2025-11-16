@@ -8,18 +8,15 @@ export default function ProductCard({ products, openModal, isFavorite, toggleFav
         bg-white dark:bg-[#2c2c2e] 
         border border-[#e5e5e7] dark:border-[#3a3a3c]
         p-5 rounded-2xl 
-        shadow-[0px_4px_12px_rgba(0,0,0,0.06)]
-        dark:shadow-[0px_4px_12px_rgba(0,0,0,0.4)]
-        hover:shadow-[0px_6px_20px_rgba(0,0,0,0.10)]
-        hover:dark:shadow-[0px_6px_20px_rgba(0,0,0,0.55)]
-        hover:-translate-y-1
-        transition-all cursor-pointer
+        shadow-sm hover:shadow-md 
+        hover:-translate-y-1 transition-all cursor-pointer
         text-gray-900 dark:text-[#f5f5f7]
+        flex flex-col
       "
       onClick={() => openModal(products)}
     >
 
-      {/*  Favorite Button */}
+      {/* Favorite Button */}
       <button
         onClick={(e) => {
           e.stopPropagation();
@@ -45,31 +42,38 @@ export default function ProductCard({ products, openModal, isFavorite, toggleFav
         />
       </button>
 
+      {/* IMAGE */}
       <img
         src={products.image}
         alt={products.title}
-        className="w-full h-48 object-contain mb-4"
+        className="w-full h-48 object-contain mb-4 flex-shrink-0"
       />
 
-      <h4 className="font-semibold text-[15px] mb-2">
-        {products.title.length > 50
-          ? products.title.slice(0, 50) + "..."
-          : products.title}
+      {/* TITLE - FIX HEIGHT */}
+      <h4 className="
+        font-semibold text-[15px] mb-2 
+        h-10 overflow-hidden text-ellipsis
+      ">
+        {products.title}
       </h4>
 
+      {/* CATEGORY */}
       <p className="text-xs text-gray-500 dark:text-gray-400 mb-2 capitalize">
         {products.category}
       </p>
 
+      {/* RATING */}
       <div className="flex items-center gap-1 mb-2">
-        <span className="text-yellow-500">⭐</span>
+        ⭐
         <span className="text-sm">{products.rating.rate}</span>
         <span className="text-xs text-gray-400">({products.rating.count})</span>
       </div>
 
-      <p className="text-green-600 dark:text-green-400 font-bold text-lg">
+      {/* PRICE - STICKS AT BOTTOM */}
+      <p className="text-green-600 dark:text-green-400 font-bold text-lg mt-auto">
         ₹ {products.price}
       </p>
+
     </div>
   );
 }
