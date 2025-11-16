@@ -1,20 +1,76 @@
-<<<<<<< HEAD
-# React + Vite
+# 🛒 Product Dashboard – React + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive product dashboard built using **React**, **Tailwind CSS**, and **FakeStore API**.  
+This project is part of an internship assignment and showcases real-world features like:
 
-Currently, two official plugins are available:
+✔ Search  
+✔ Category Filter  
+✔ Sort (Price + Rating)  
+✔ Pagination  
+✔ Dark/Light Mode  
+✔ Favorites (Saved in LocalStorage)  
+✔ Product Modal (with smooth animations)  
+✔ Skeleton Loading State  
+✔ Fully Responsive (Mobile → Desktop)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo (If deployed)
+Add your deployed link here.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# ProductDashboardAssignment
->>>>>>> b77dc7ef0b6a7cb4c74c8c1b7feb6f77ed94e372
+(Add screenshots of UI, modal, dark mode, filters, etc.)
+
+---
+
+## 📦 Features
+
+### 🔍 1. Smart Search (Debounced)
+Search updates after user stops typing (300ms delay).
+
+### 🏷 2. Category Filtering
+Categories are fetched dynamically from the API.
+
+### ↕ Sorting
+- Low → High (Price)
+- High → Low (Price)
+- Rating
+
+### ❤️ 4. Add to Favorites
+Favorites are saved in **localStorage**, so they stay even after refresh.
+
+### 🌓 5. Dark/Light Mode
+Theme handled using **Context API** + Tailwind’s dark class.
+
+### 🪟 6. Product Modal
+Clicking a product opens a clean, animated modal with full description.
+
+### 📄 7. Pagination
+Improves performance and UX by showing limited products per page.
+
+### ⏳ 8. Skeleton Loader
+While API loads, animated skeletons appear.
+
+### 📱 9. Fully Responsive
+Mobile-first UI with fluid layout.
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| **React** | Component-based UI |
+| **Tailwind CSS** | Styling |
+| **FakeStore API** | Product Data |
+| **Context API** | Theme State & Favorites |
+| **localStorage** | Persisting favorite items |
+| **Vite** | Fast development environment |
+
+---
+
+## 📁 Folder Structure
+
